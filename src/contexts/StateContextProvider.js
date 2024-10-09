@@ -12,10 +12,13 @@ export const StateContextProvider = ({ children }) => {
     setLoading(true);
 
     const res = await fetch(`${baseUrl}${url}`, {
-      method: 'GET',
-      headers: {
-        'x-rapidapi-host': 'google-search3.p.rapidapi.com',
-        'x-rapidapi-key': process.env.REACT_APP_API_KEY,
+	method: 'GET',
+	hostname: 'google-search72.p.rapidapi.com',
+	port: null,
+	path: '/search?q=word%20cup&lr=en-US&num=10',
+	headers: {
+		'x-rapidapi-key': '2106f34345mshd698806d7345daep15f627jsnffde8ad7d379',
+		'x-rapidapi-host': 'google-search72.p.rapidapi.com'
       },
     });
 
