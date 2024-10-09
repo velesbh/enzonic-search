@@ -17,7 +17,7 @@ export const StateContextProvider = ({ children }) => {
 	port: null,
 	path: '/search?q=word%20cup&lr=en-US&num=10',
 	headers: {
-		'x-rapidapi-key': '2106f34345mshd698806d7345daep15f627jsnffde8ad7d379',
+		'x-rapidapi-key': process.env.REACT_APP_API_KEY,
 		'x-rapidapi-host': 'google-search72.p.rapidapi.com'
       },
     });
